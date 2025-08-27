@@ -42,3 +42,8 @@ while True:
     # so i made cnt variable ,found the number of times load_more is happening and then added the break condition accordingly 
     # so as to make sure no content is lost
     
+html = driver.page_source
+import os
+
+with open(r"D:\Study Material ;)\Padh Le Vro\DA\Project 1\smartprix_.html", "w", encoding="utf-8") as f:
+    f.write(html)
